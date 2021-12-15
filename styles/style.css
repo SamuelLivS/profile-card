@@ -1,0 +1,161 @@
+:root {
+    --DarkCyan: hsl(185, 75%, 39%);
+    --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --DarkGrayishBlue: hsl(227, 10%, 46%);
+    --DarkGray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.8rem;
+    background-color: var(--DarkCyan);
+}
+
+main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ball {
+    position: absolute;
+}
+
+#ball-top {
+    top: -600px;
+    left: -750px;
+}
+
+#ball-bottom {
+    bottom: -600px;
+    right: -750px;
+}
+
+h2, h3 {
+    color: var(--VeryDarkDesaturatedBlue);
+}
+
+#card {
+    z-index: 100;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: white;
+}
+
+#card-body{
+    position: relative;
+}
+
+/*img*/
+#div-profile{
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: max-content;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: white;
+    z-index: 50;
+}
+
+#img-profile{
+    border-radius: 50%;
+}
+
+/*information*/
+#name {
+    margin-bottom: 10px;
+}
+
+#age {
+    margin-left: 5px;
+}
+
+#city{
+    margin-bottom: 20px;
+}
+
+#name, #city{
+    text-align: center;
+}
+
+#age, #city{
+    font-weight: 400;
+    color: var(--DarkGrayishBlue);
+}
+
+/*stats about me?*/
+#div-stats{
+    border-top: solid 1px rgba(0, 0, 0, 0.116);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#div-stats div {
+    text-align: center;
+}
+
+
+#div-stats div p{
+    color: var(--DarkGray);
+    margin-top: 5px;
+    font-size: 1.5rem;
+}
+
+
+.attribution {
+    position: relative;
+    margin-top: -15px;
+    font-size: 12px;
+    text-align: center;
+    color: var(--VeryDarkDesaturatedBlue);
+}
+
+.attribution a {
+    color:  white;
+    text-decoration: none;
+}
+
+@media (min-width: 700px) {
+    #card {
+        max-width: 350px;
+    }
+
+    #ball-top {
+        left: -600px;
+    }
+
+    #ball-bottom {
+        right: -600px;
+    }
+}
+
+@media (min-width: 1000px) {
+    #ball-top {
+        top: -600px;
+        left: -300px;
+    }
+
+    #ball-bottom {
+        bottom: -600px;
+        right: -200px;
+    }
+}
